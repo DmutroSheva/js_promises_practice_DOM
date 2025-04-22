@@ -36,9 +36,9 @@ const thirdPromise = new Promise((resolve) => {
       leftClickOccurred = true;
     }
 
-    // if (e.button === 2) {
-    //   rightClickOccurred = true;
-    // }
+    if (e.button === 2) {
+      rightClickOccurred = true;
+    }
 
     if (leftClickOccurred && rightClickOccurred) {
       resolve('Third promise was resolved');
